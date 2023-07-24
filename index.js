@@ -6,30 +6,19 @@ function imprimirNombreApellido(objeto) {
         console.log("El objeto no tiene las propiedades 'nombre' y 'apellido'.");
     }
 }
-
 const persona = {
     nombre: "Romina",
     apellido: "Rodriguez",
     edad: "28",
-    presentarse: ()=> {
-        return "Hola, mi nombre es" + persona.nombre + "y tengo" + persona.edad +"años.";
+    presentarse: () => {
+        return "Hola, mi nombre es " + persona.nombre + " y tengo " + persona.edad + " años.";
     }
 };
-console.log(persona.presentarse()); //se imprmiria el "Hola, mi nombre es Romina y tengo 28 años."
-function imprimirNombreApellido(objeto) {
-    console.log(objeto.nombre + " " + objeto.apellido);
-}
 
-//se esta declarando una funcion que llama a imprimirNombreApellido
-
-function imprimirNombreApellido(objeto) {
-    console.log(objeto.nombre + " " + objeto.apellido);
-}
-
-imprimirNombreApellido(persona);
+console.log(persona.presentarse());
+//imprime el  "Hola, mi nombre es Romina y tengo 28 años."
 
 //funcion que recibe un parametro 
-
 function asignarColorRojo(objeto) {
     objeto.color = "rojo";
 }
@@ -37,13 +26,13 @@ function asignarColorRojo(objeto) {
 const miObjeto = {
     marca: 'fiat', 
     modelo: 'uno'
-     
 };
 
 asignarColorRojo(miObjeto);
 
-console.log(miObjeto.color);
-console.log(miObjeto.marca);
+console.log(miObjeto.color); 
+
+console.log(miObjeto.marca); 
 console.log(miObjeto.modelo);
 
 //LA funcion sumarPesos recorre el array "autos" utilizando un bugle for
@@ -61,7 +50,4 @@ let autos = [
     {marca: 'ford', modelo: 'fiesta', peso: 1300},
 ];
 
-console.log(sumarPesos(autos)); // devolvera la suma de 4500 (1200 + 2000 + 1300)
-
-
-
+console.log(sumarPesos(autos)); //devolvera la suma de 4500 (1200 + 2000 + 1300)
